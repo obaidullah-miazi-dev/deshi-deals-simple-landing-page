@@ -10,29 +10,246 @@
     <!-- tailwind cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisy ui  -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
 
     <header class="flex justify-center h-[80px] mt-3 border-b-2 border-gray-200 pb-3">
         <div class="flex gap-3">
-            <img  src="assets/logo.png" alt="">
+            <img src="assets/logo.png" alt="">
             <div>
                 <h1 class="text-pink-600 text-4xl">Deshi <span class="font-bold">Deals</span></h1>
-                <p class="text-gray-500">Cheap Price ,  Best Quality</p>
+                <p class="text-gray-500">Cheap Price , Best Quality</p>
             </div>
         </div>
     </header>
 
-    <!-- banner section  -->
-     <section class="pt-32 bg-gradient-to-t from-[#F6DDEA] to-[#FFFFFF]">
-        <h1 class="text-center text-5xl font-bold mb-10">Purchase TK 200 or above & get <br> <span class="text-[#E527B2]">20% off</span></h1>
-        <div class="flex justify-center items-center gap-12 ">
-            <p class="font-semibold">Use Promo Code</p>
-            <button class="btn bg-[#E527B2] text-white font-semibold py-4 px-9">Off200</button>
-        </div>
-        <img class="mx-auto relative top-16 px-5 md:p-0 md:top-32" src="assets/hero-bg.png" alt="">
-     </section>
+    <main class="bg-[#F4F1F1]">
+        <!-- banner section  -->
+        <section class="pt-32 bg-gradient-to-t from-[#F6DDEA] to-[#FFFFFF]">
+            <h1 class="text-center text-5xl font-bold mb-10">Purchase TK 200 or above & get <br> <span
+                    class="text-[#E527B2]">20% off</span></h1>
+            <div class="flex justify-center items-center gap-12 ">
+                <p class="font-semibold">Use Promo Code</p>
+                <button class="btn bg-[#E527B2] text-white font-semibold py-4 px-9">Off200</button>
+            </div>
+            <img class="mx-auto relative top-16 px-5 md:p-0 md:top-32" src="assets/hero-bg.png" alt="">
+        </section>
+
+
+        <section id="product-container" class="mt-40 w-11/12 mx-auto grid grid-cols-12 gap-20 py-10 ">
+            <section id="product-box" class=" col-span-9">
+
+                <!-- kitchen ware  -->
+                <div class="mb-16">
+                    <h1 class="text-4xl font-semibold mb-8">Kitchenware</h1>
+                    <div id="kitchen-items" class="flex gap-5 justify-between">
+                        <!-- card 1 -->
+                        <div class="card bg-base-100 w-96 shadow-sm">
+                            <figure class="px-5 pt-5 ">
+                                <div class="bg-[#11111117] py-8 px-28 rounded-lg">
+                                    <img src="assets/kitchen-1.png" alt="Shoes" class="rounded-xl" />
+                                </div>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title text-xl font-semibold">Spoon combo</h2>
+                                <p class="text-gray-600">A card component has a figure, a body part, and inside body
+                                    there are title and actions parts</p>
+                                <p class="text-gray-800 font-semibold"><span>150</span> Tk</p>
+                                <div class="w-full">
+                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- card 2 -->
+                        <div class="card bg-base-100 w-96 shadow-sm">
+                            <figure class="px-5 pt-5 ">
+                                <div class="bg-[#11111117] py-8 px-28 rounded-lg">
+                                    <img src="assets/kitchen-2.png" alt="Shoes" class="rounded-xl" />
+                                </div>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title text-xl font-semibold">Plate combo</h2>
+                                <p class="text-gray-600">A card component has a figure, a body part, and inside body
+                                    there are title and actions parts</p>
+                                <p class="text-gray-800 font-semibold"><span>250</span> Tk</p>
+                                <div class="w-full">
+                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- card 3 -->
+                        <div class="card bg-base-100 w-96 shadow-sm">
+                            <figure class="px-5 pt-5 ">
+                                <div class="bg-[#11111117] py-8 px-28 rounded-lg">
+                                    <img src="assets/kitchen-3.png" alt="Shoes" class="rounded-xl" />
+                                </div>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title text-xl font-semibold">Home Cooker</h2>
+                                <p class="text-gray-600">A card component has a figure, a body part, and inside body
+                                    there are title and actions parts</p>
+                                <p class="text-gray-800 font-semibold"><span>700</span> Tk</p>
+                                <div class="w-full">
+                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- sports weare -->
+                <div class="mb-16">
+                    <h1 class="text-4xl font-semibold mb-8">Sportsware</h1>
+                    <div id="kitchen-items" class="flex gap-5 justify-between">
+                        <!-- card 1 -->
+                        <div class="card bg-base-100 w-96 shadow-sm">
+                            <figure class="px-5 pt-5 ">
+                                <div class="bg-[#11111117] py-8 px-28 rounded-lg">
+                                    <img src="assets/sports-1.png" alt="Shoes" class="rounded-xl" />
+                                </div>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title text-xl font-semibold">Sports Back Cap</h2>
+                                <p class="text-gray-600">A card component has a figure, a body part, and inside body
+                                    there are title and actions parts</p>
+                                <p class="text-gray-800 font-semibold"><span>150</span> Tk</p>
+                                <div class="w-full">
+                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- card 2 -->
+                        <div class="card bg-base-100 w-96 shadow-sm">
+                            <figure class="px-5 pt-5 ">
+                                <div class="bg-[#11111117] py-8 px-28 rounded-lg">
+                                    <img src="assets/sports-2.png" alt="Shoes" class="rounded-xl" />
+                                </div>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title text-xl font-semibold">Full jearsy set</h2>
+                                <p class="text-gray-600">A card component has a figure, a body part, and inside body
+                                    there are title and actions parts</p>
+                                <p class="text-gray-800 font-semibold"><span>850</span> Tk</p>
+                                <div class="w-full">
+                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- card 3 -->
+                        <div class="card bg-base-100 w-96 shadow-sm">
+                            <figure class="px-5 pt-5 ">
+                                <div class="bg-[#11111117] py-8 px-28 rounded-lg">
+                                    <img src="assets/sports-3.png" alt="Shoes" class="rounded-xl" />
+                                </div>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title text-xl font-semibold">Sports cates</h2>
+                                <p class="text-gray-600">A card component has a figure, a body part, and inside body
+                                    there are title and actions parts</p>
+                                <p class="text-gray-800 font-semibold"><span>500</span> Tk</p>
+                                <div class="w-full">
+                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- furniture -->
+                <div>
+                    <h1 class="text-4xl font-semibold mb-8">Furniture</h1>
+                    <div id="kitchen-items" class="flex gap-5 justify-between">
+                        <!-- card 1 -->
+                        <div class="card bg-base-100 w-96 shadow-sm">
+                            <figure class="px-5 pt-5 ">
+                                <div class="bg-[#11111117] py-8 px-28 rounded-lg">
+                                    <img src="assets/furniture-1.png" alt="Shoes" class="rounded-xl" />
+                                </div>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title text-xl font-semibold">Single Relax Chair</h2>
+                                <p class="text-gray-600">A card component has a figure, a body part, and inside body
+                                    there are title and actions parts</p>
+                                <p class="text-gray-800 font-semibold"><span>350</span> Tk</p>
+                                <div class="w-full">
+                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- card 2 -->
+                        <div class="card bg-base-100 w-96 shadow-sm">
+                            <figure class="px-5 pt-5 ">
+                                <div class="bg-[#11111117] py-8 px-28 rounded-lg">
+                                    <img src="assets/furniture-2.png" alt="Shoes" class="rounded-xl" />
+                                </div>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title text-xl font-semibold">Children play</h2>
+                                <p class="text-gray-600">A card component has a figure, a body part, and inside body
+                                    there are title and actions parts</p>
+                                <p class="text-gray-800 font-semibold"><span>180</span> Tk</p>
+                                <div class="w-full">
+                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- card 3 -->
+                        <div class="card bg-base-100 w-96 shadow-sm">
+                            <figure class="px-5 pt-5 ">
+                                <div class="bg-[#11111117] py-8 px-28 rounded-lg">
+                                    <img src="assets/furniture-3.png" alt="Shoes" class="rounded-xl" />
+                                </div>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title text-xl font-semibold">Flexible Sofa</h2>
+                                <p class="text-gray-600">A card component has a figure, a body part, and inside body
+                                    there are title and actions parts</p>
+                                <p class="text-gray-800 font-semibold"><span>600</span> Tk</p>
+                                <div class="w-full">
+                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </section>
+
+
+
+
+            <aside id="cart-box" class="bg-green-100 col-span-3">
+                <h1>cart</h1>
+            </aside>
+        </section>
+    </main>
 
 </body>
 
