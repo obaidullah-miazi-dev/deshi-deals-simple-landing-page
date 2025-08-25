@@ -8,12 +8,31 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <!-- tailwind cdn  -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisy ui  -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
+
+    <header class="flex justify-center h-[80px] mt-3 border-b-2 border-gray-200 pb-3">
+        <div class="flex gap-3">
+            <img  src="assets/logo.png" alt="">
+            <div>
+                <h1 class="text-pink-600 text-4xl">Deshi <span class="font-bold">Deals</span></h1>
+                <p class="text-gray-500">Cheap Price ,  Best Quality</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner section  -->
+     <section class="pt-32 bg-gradient-to-t from-[#F6DDEA] to-[#FFFFFF]">
+        <h1 class="text-center text-5xl font-bold mb-10">Purchase TK 200 or above & get <br> <span class="text-[#E527B2]">20% off</span></h1>
+        <div class="flex justify-center items-center gap-12 ">
+            <p class="font-semibold">Use Promo Code</p>
+            <button class="btn bg-[#E527B2] text-white font-semibold py-4 px-9">Off200</button>
+        </div>
+        <img class="mx-auto relative top-16 px-5 md:p-0 md:top-32" src="assets/hero-bg.png" alt="">
+     </section>
 
 </body>
 
