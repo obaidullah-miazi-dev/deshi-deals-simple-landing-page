@@ -58,7 +58,9 @@
                                     there are title and actions parts</p>
                                 <p class="text-gray-800 font-semibold"><span>150</span> Tk</p>
                                 <div class="w-full">
-                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                    <button id="add-cart-btn"
+                                        class="cart-btn btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add
+                                        to
                                         Cart</button>
                                 </div>
                             </div>
@@ -77,7 +79,9 @@
                                     there are title and actions parts</p>
                                 <p class="text-gray-800 font-semibold"><span>250</span> Tk</p>
                                 <div class="w-full">
-                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                    <button
+                                        class="cart-btn btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add
+                                        to
                                         Cart</button>
                                 </div>
                             </div>
@@ -96,7 +100,9 @@
                                     there are title and actions parts</p>
                                 <p class="text-gray-800 font-semibold"><span>700</span> Tk</p>
                                 <div class="w-full">
-                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                    <button
+                                        class="cart-btn btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add
+                                        to
                                         Cart</button>
                                 </div>
                             </div>
@@ -123,7 +129,9 @@
                                     there are title and actions parts</p>
                                 <p class="text-gray-800 font-semibold"><span>150</span> Tk</p>
                                 <div class="w-full">
-                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                    <button
+                                        class="cart-btn btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add
+                                        to
                                         Cart</button>
                                 </div>
                             </div>
@@ -142,7 +150,9 @@
                                     there are title and actions parts</p>
                                 <p class="text-gray-800 font-semibold"><span>850</span> Tk</p>
                                 <div class="w-full">
-                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                    <button
+                                        class="cart-btn btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add
+                                        to
                                         Cart</button>
                                 </div>
                             </div>
@@ -161,7 +171,9 @@
                                     there are title and actions parts</p>
                                 <p class="text-gray-800 font-semibold"><span>500</span> Tk</p>
                                 <div class="w-full">
-                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                    <button
+                                        class="cart-btn btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add
+                                        to
                                         Cart</button>
                                 </div>
                             </div>
@@ -188,7 +200,9 @@
                                     there are title and actions parts</p>
                                 <p class="text-gray-800 font-semibold"><span>350</span> Tk</p>
                                 <div class="w-full">
-                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                    <button
+                                        class="cart-btn btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add
+                                        to
                                         Cart</button>
                                 </div>
                             </div>
@@ -207,7 +221,9 @@
                                     there are title and actions parts</p>
                                 <p class="text-gray-800 font-semibold"><span>180</span> Tk</p>
                                 <div class="w-full">
-                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                    <button
+                                        class="cart-btn btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add
+                                        to
                                         Cart</button>
                                 </div>
                             </div>
@@ -226,7 +242,9 @@
                                     there are title and actions parts</p>
                                 <p class="text-gray-800 font-semibold"><span>600</span> Tk</p>
                                 <div class="w-full">
-                                    <button class="btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add to
+                                    <button
+                                        class="cart-btn btn bg-[#E527B2] text-white px-8 py-4 w-full font-semibold">Add
+                                        to
                                         Cart</button>
                                 </div>
                             </div>
@@ -236,21 +254,54 @@
                     </div>
                 </div>
 
-
-
-
-
             </section>
 
 
 
 
-            <aside id="cart-box" class="bg-green-100 col-span-3">
-                <h1>cart</h1>
+            <aside id="cart-box" class=" col-span-3 p-5">
+
+                <!-- coupon container  -->
+                <div class="bg-white p-5 py-6 rounded-lg mb-5">
+                    <h1 class="mb-5 font-semibold">Have A Coupon ?</h1>
+                    <div class="join w-full">
+                        <input class="input join-item border p-3" placeholder="Coupon Code" />
+                        <button class="btn join-item rounded-r-lg bg-[#E527B2] p-4 text-white">Apply</button>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="bg-white rounded-lg p-5 py-6 ">
+
+
+                    <div id="cart-container">
+                        
+                    </div>
+
+
+                    <div>
+                        <h3>Total price: <span id="total-price">0</span> TK</h3>
+                        <h3>Quantity : <span id="total-quantity">0</span> Items</h3>
+                    </div>
+
+                    <div class="mt-5">
+                        <button class="btn bg-[#E527B2] text-white px-4 py-2 w-full font-semibold">Make
+                            Purchase</button>
+                    </div>
+                </div>
+
             </aside>
+
+
         </section>
     </main>
 
+
+    <script src="script/script.js"></script>
 </body>
 
 </html>
